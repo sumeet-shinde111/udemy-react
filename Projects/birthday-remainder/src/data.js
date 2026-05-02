@@ -47,5 +47,4 @@ export const people = [
     age: 28,
     image: "https://randomuser.me/api/portraits/women/35.jpg"
   },
-  
 ];
