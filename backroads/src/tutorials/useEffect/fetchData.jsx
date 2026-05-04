@@ -3,7 +3,7 @@ import { useState,useEffect } from "react";
 const FetchUsers = ()=>{
     const[user,setUser] = useState([]);
 
-    const url = "https://api.github.com/userss";
+    const url = "https://api.github.com/users";
 
     const getData = async()=>{
         try {
