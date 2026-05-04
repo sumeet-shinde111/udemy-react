@@ -2,15 +2,16 @@ import { useState,useEffect } from "react";
 
 const FetchUsers = ()=>{
     const[user,setUser] = useState([]);
-
+    const [isLoading,setIsLoading] = useState(false);
     const url = "https://api.github.com/users";
 
     const getData = async()=>{
         try {
+            setIsLoading(true);
             const result = await fetch(url);
             const response = await result.json();
-            console.log(response);
             setUser(response);
+            setIsLoading(false)
         } catch (error) {
             console.log("Error occured...",error);
         }
@@ -18,11 +19,12 @@ const FetchUsers = ()=>{
 
     useEffect(()=>{
         getData();
-    },[])
+    },[])   
 
     return(
         <>
         <h1>Fetch user data</h1>
+        {isLoading ? <div>Loading....</div> : 
         <ul>
                 {
                     user.map((value)=>{
@@ -34,7 +36,7 @@ const FetchUsers = ()=>{
                     })
                 }
         </ul>
-        
+        }
         </>
     )
 }
