@@ -5,6 +5,7 @@ import UseStateObject from './tutorials/useState/starter/useState-Object'
 import UseStateGotcha from './tutorials/useState/starter/useState-gotcha'
 // ------------------------------------------------------------------------
 import UseEffectBasic from './tutorials/useEffect/useEffect-basis'
+import FetchUsers from './tutorials/useEffect/fetchData'
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       {/* <UseStateObject /> */}
       {/* <UseStateGotcha /> */}
     {/* ------------------------------------ */}
-    <UseEffectBasic/>
+    {/* <UseEffectBasic/> */}
+    <FetchUsers/>
 
 
     </div>

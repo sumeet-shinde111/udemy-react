@@ -23,15 +23,16 @@ const UseEffectBasic = ()=>{
         console.log("This useEffct on every render...")
     })
 
+    useEffect(()=>{
+        //This will run on initial render
+        console.log("Will run only once on initial render");
+    },[]);
+
       useEffect(()=>{
         // This will run when value 1 is incremented..
         console.log("This useEffct for first button...")
     },[value1])
     
-    useEffect(()=>{
-        // This will run when value 2 is incremented..
-        console.log("useEffect for second button...")
-    },[value2])
 
     const increment1 = ()=>{
         setValue1(value1+1);
@@ -44,10 +45,8 @@ const UseEffectBasic = ()=>{
     return(
         <>
             <h1>Value1 : {value1}</h1>
-            <h1>Value2 : {value2}</h1>
 
             <button onClick={increment1}>Click me 1</button>
-            <button onClick={increment2}>Click me 2</button>
 
         </>
     )
