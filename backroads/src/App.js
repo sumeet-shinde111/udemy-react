@@ -6,6 +6,7 @@ import UseStateGotcha from './tutorials/useState/starter/useState-gotcha'
 // ------------------------------------------------------------------------
 import UseEffectBasic from './tutorials/useEffect/useEffect-basis'
 import FetchUsers from './tutorials/useEffect/fetchData'
+import Cleanup from './tutorials/useEffect/Cleanup'
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
       {/* <UseStateGotcha /> */}
     {/* ------------------------------------ */}
     {/* <UseEffectBasic/> */}
-    <FetchUsers/>
+    {/* <FetchUsers/> */}
+    <Cleanup/>
 
 
     </div>
