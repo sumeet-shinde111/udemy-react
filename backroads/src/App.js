@@ -7,6 +7,7 @@ import UseStateGotcha from './tutorials/useState/starter/useState-gotcha'
 import UseEffectBasic from './tutorials/useEffect/useEffect-basis'
 import FetchUsers from './tutorials/useEffect/fetchData'
 import Cleanup from './tutorials/useEffect/Cleanup'
+import TourApp from './Projects/Tours/src/App'
 
 function App() {
   return (
@@ -18,7 +19,12 @@ function App() {
     {/* ------------------------------------ */}
     {/* <UseEffectBasic/> */}
     {/* <FetchUsers/> */}
-    <Cleanup/>
+    {/* <Cleanup/> */}
+
+
+
+    {/* ---------------------PROJECTS----------------------- */}
+    <TourApp/>
 
 
     </div>
